@@ -19,5 +19,7 @@ class MyApp {
     System.out.println(10 % 7);
     // 文字列として認識
     System.out.println("10 - 7");
+    //文字列の連結
+    System.out.println("10" + "7");
   }
 }
