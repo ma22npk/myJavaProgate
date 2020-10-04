@@ -49,7 +49,27 @@ class MyApp {
     String name = "Matsumoto";
     System.out.println(name);
     System.out.println(greeting + name + "さん");
-
-
+    // 自己代入 [START] ========================================
+    // 変数を定義
+    int x = 3;
+    // 変数に2を足して更新する
+    x = x + 2;
+    // 結果５
+    System.out.println(x);
+    // 自己代入 [END] ==========================================
+    // 少数を扱う [START] ========================================
+    // 少数を扱う数 = double型
+    // 小数点が入らない数字（整数） = int型
+    double number2 = 5.28;
+    System.out.println(number);
+    // 強制方変換について
+    int number3 = 13;
+    int number4 = 4;
+    // 結果が3になり、3.25にならない
+    System.out.println(number3 / number4);
+    // 割り算などで正確な小数点込みの計算を求めるような場合、強制的に型変換を行う。これをキャストと呼ぶ。
+    // int型同士の計算で、最終的にdoubleの計算結果を得たい場合、どちらか一つをキャストする。
+    System.out.println((double)number3 / number4);
+    // 少数を扱う [END] ==========================================
   }
 }
