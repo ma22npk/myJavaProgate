@@ -33,6 +33,11 @@ class MyApp {
     // number = 3;
     // 変数の定義と代入をする。これを「変数の初期化」と呼ぶ
     int number = 3;
+    // 変数の更新 [START] ---------------------------------------
+    // 同じ処理の中で同一の変数を定義できないため、変数を更新するときはデータ型をつけない事！ ✖️ int number = 5;
+    number = 5;
+    // 変数の更新 [END] -----------------------------------------
+
     System.out.println(number);
     System.out.println(number + 5);
     // String型 の変数の定義
@@ -44,9 +49,7 @@ class MyApp {
     String name = "Matsumoto";
     System.out.println(name);
     System.out.println(greeting + name + "さん");
-    // 変数の定義方法 [END] -----------------------------------------
 
-    // 変数の定義 [END] ==========================================
 
   }
 }
